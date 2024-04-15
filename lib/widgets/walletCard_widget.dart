@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class CurrencyCard extends StatelessWidget {
+class WalletCard extends StatelessWidget {
   final String name, code, amount;
   final IconData icon;
   final bool isInverted;
   final double offset;
 
-  const CurrencyCard({
+  const WalletCard({
     super.key,
     required this.name,
     required this.code,
