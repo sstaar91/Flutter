@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/button.dart';
-import 'package:toonflix/widgets/walletCard_widget.dart';
+import 'package:toonflix/widgets/wallet_card.dart';
 
 class MyWallet extends StatelessWidget {
   const MyWallet({super.key});

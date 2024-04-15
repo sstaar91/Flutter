@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/screens/myWallet_screen.dart';
 
 class MenuCard extends StatelessWidget {
   final String text;
+  final Widget page;
 
   const MenuCard({
     super.key,
     required this.text,
+    required this.page,
   });
 
   @override
@@ -15,14 +16,13 @@ class MenuCard extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
-            builder: (context) => const MyWallet(),
-          ),
+          MaterialPageRoute(builder: (context) => page),
         );
       },
       child: Container(
         width: 100,
         height: 100,
+        margin: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(
           border: Border.all(
             color: Colors.amberAccent.shade200,

@@ -3,8 +3,8 @@ import 'package:toonflix/models/webtoon_model.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/widgets/wetoon_widget.dart';
 
-class MainScreen extends StatelessWidget {
-  MainScreen({super.key});
+class ToonflixMain extends StatelessWidget {
+  ToonflixMain({super.key});
 
   final Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
 
