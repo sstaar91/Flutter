@@ -67,6 +67,9 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         children: [
+          const SizedBox(
+            height: 60,
+          ),
           Flexible(
             flex: 1,
             child: Container(

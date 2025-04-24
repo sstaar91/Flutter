@@ -20,20 +20,27 @@ class MenuCard extends StatelessWidget {
         );
       },
       child: Container(
-        width: 100,
-        height: 100,
+        width: 150,
+        height: 150,
         margin: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(
           border: Border.all(
-            color: Colors.amberAccent.shade200,
-            width: 3,
+            color: const Color(0xEEEEEEEE),
+            width: 5,
           ),
           borderRadius: BorderRadius.circular(20),
         ),
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(10),
-            child: Text(text),
+            child: Text(
+              text,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF000000),
+              ),
+            ),
           ),
         ),
       ),
